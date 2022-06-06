@@ -24,7 +24,6 @@ public class Demo {
 			
 		} catch (Exception e) {
 			System.out.println(e);
-			System.out.println("The index you have entered is invalid");
 		}
 		
 	}
