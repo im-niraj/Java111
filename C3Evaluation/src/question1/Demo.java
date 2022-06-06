@@ -15,11 +15,12 @@ public class Demo {
 		}
 		
 		System.out.println("Enter the index of the array element you want to access");
-		int index = scanner.nextInt();
+		String index = scanner.next();
 		scanner.close();
 		
 		try {
-			System.out.println("The array element at index "+index+" = "+array[index]);
+			int n=Integer.parseInt(index);
+			System.out.println("The array element at index "+n+" = "+array[n]);
 			System.out.println("The array element successfully accessed");
 			
 		} catch (Exception e) {
