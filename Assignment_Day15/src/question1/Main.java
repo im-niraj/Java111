@@ -18,15 +18,16 @@ public class Main {
 			else {
 				return dob;
 			}
-		}catch (Exception e) {
-			System.out.println("InvalidDateFormate " + e);
+		}catch(Exception e) {
+			InvalidDateFormate abc = new InvalidDateFormate();
+			System.out.println(abc.getMessage());
 		}
 		return null;
 	}
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter DOB in DD-MM-YYYY formate");
+		System.out.println("Enter DOB in DD-MM-YYYY format");
 		String sgeString = scanner.next();
 		scanner.close();
 	    LocalDate dobDate = new Main().getAge(sgeString);
